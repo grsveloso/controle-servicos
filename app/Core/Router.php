@@ -2,9 +2,11 @@
 
     require __DIR__ . '/../Controllers/AuthController.php';
     require __DIR__ . '/../Controllers/UserController.php';
+    require __DIR__ . '/../Controllers/DashboardController.php';
 
     $authController = new AuthController();
     $userController = new UserController();
+    $dashboardController = new DashboardController();
 
     $action = $_GET['action'] ?? 'login';
 
@@ -14,6 +16,12 @@
             break;
         case 'register':
             $userController->register();
+            break;
+        case 'dashboard':
+            $dashboardController->index();
+            break;
+        case 'create_service':
+            $dashboardController->createService();
             break;
         default:
             http_response_code(404);
