@@ -93,9 +93,25 @@ body {
 
 .services-table {
     border: 2px solid #333;
-    min-height: 235px;
     padding: 20px 15px;
     margin: 0 20px;
+}
+
+.services-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.services-table th {
+    padding: 0 0 30px 0;
+    text-align: left;
+    font-size: 22px;
+}
+
+.services-table td {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 21px;
 }
 
 .table-header, .table-row {

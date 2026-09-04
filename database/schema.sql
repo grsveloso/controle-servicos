@@ -19,6 +19,7 @@ CREATE TABLE service (
     id_service BIGINT(20) NOT NULL AUTO_INCREMENT,
     description VARCHAR(45),
     price DECIMAL(11,3),
+    status VARCHAR(20) NOT NULL DEFAULT 'PENDENTE',
     created_at DATETIME,
     update_at DATETIME,
     finished_at DATETIME,

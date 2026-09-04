@@ -23,6 +23,18 @@
         case 'create_service':
             $dashboardController->createService();
             break;
+        case 'finish_service':
+            $dashboardController->finishService();
+            break;
+        case 'delete_service':
+            $dashboardController->deleteService();
+            break;
+        case 'edit_service':
+            $dashboardController->editService();
+            break;
+        case 'update_service':
+            $dashboardController->updateService();
+            break;
         default:
             http_response_code(404);
             echo "Página não encontrada.";
